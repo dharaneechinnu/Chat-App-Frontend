@@ -28,7 +28,7 @@ export const ChatContextProvider = ({ children, user }) => {
     console.log("notification : ",notification);
 
     useEffect(() => {
-        const newSocket = io("https://chat-app-backend-iota-two.vercel.app/");
+        const newSocket = io("https://chat-app-backend-bjcp.onrender.com");
         setSocket(newSocket);
 
         return () => {
